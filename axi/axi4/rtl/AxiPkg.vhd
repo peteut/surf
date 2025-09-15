@@ -223,7 +223,7 @@ package AxiPkg is
       constant LEN_BITS_C   : in natural range 0 to 8                      := 4)
       return AxiConfigType;
 
-   constant AXI_CONFIG_INIT_C : AxiConfigType := axiConfig(
+   constant AXI_CONFIG_INIT_C : AxiConfigType := (
       ADDR_WIDTH_C => 32,
       DATA_BYTES_C => 4,
       ID_BITS_C    => 12,
